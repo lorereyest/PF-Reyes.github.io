@@ -1,0 +1,197 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+#header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 4;
+    position: fixed;
+
+    .nav {
+        width: 100%;
+        background: #BFB5A7(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.685) 0%, rgba(0,0,0,0.4546860980720413) 48%, rgba(0,0,0,0.2810166302849265) 76%, rgba(0,0,0,0) 100%);
+        color: #FFFFF7;
+        text-transform: uppercase;
+        
+        .nav__container {
+            display: flex;
+            height: 110px;
+            width: 95%;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items: center;
+
+            .nav-logo img { 
+                height: 50px;
+                width: auto;
+                padding-left: 40px;
+            }
+
+            .nav-label img {
+                height: 50px;
+                width: 50px;
+            }
+
+            .nav-input:checked + .nav-menu {
+                background-color: $colorAmarillo;
+            }
+
+            .nav-menu {
+                display: grid;
+                grid-auto-flow: column;
+                gap: 48px;
+    
+                .nav-menu__item {
+                    color: #FFFFF7;
+                    text-decoration: none;
+                    &:hover {
+                        color: $colorAmarillo;
+                    }
+                }
+            }
+
+            .nav-label, .nav-input {
+                display: none;
+            }
+        }
+        
+    }
+}
+
+/* FOOTER */
+#footer {
+    width: 100%;
+    height: auto;
+
+    .footer__container {
+        background-color: $bgColorOscuro;
+        color: #FFFFF7 ;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 80px 50px 80px 50px;
+
+        h5 {
+            text-transform: uppercase;
+            font-size:large;
+        }
+
+        .redes {
+
+            h5 {
+                padding-bottom: 3px;
+                border-bottom: 1px solid #FFFFF7;
+                width: 198px;
+            }
+
+            .redes__img {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: left;
+                gap: 35px;
+                padding-top: 20px;
+
+                a {
+                    text-decoration: none;
+
+                    img {
+                        width: 35px;
+                        transform: scale(1);
+                        transition: 0.2s ease-in-out;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }  
+                }
+            }
+        }
+
+        .navegacion {
+            display: flex;
+            flex-direction: column;
+
+            h5 {
+                padding-bottom: 3px;
+                border-bottom: 1px solid #FFFFF7;
+                width: 180px;
+            }
+
+            .navegacion__enlaces {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                padding-top: 10px;
+                
+                a {
+                    text-decoration: none;
+                    color: #FFFFF7 ;
+                    margin-left: 5px;
+                    &:hover {
+                        color: $colorAmarillo;
+                    }
+                }
+            }
+        }
+
+        .newsletter {
+            h5 {
+                padding-bottom: 3px;
+                border-bottom: 1px solid #FFFFF7;
+                width: 300px;
+            }
+            
+            p {
+                padding-top: 10px;
+                width: 300px;
+                text-align: justify;
+            }
+            
+            div {
+                input {
+                    padding: 5px;
+                    border-radius: 8px;
+                    border-color: #FFFFF7;
+                    padding-right: 20px;
+                    margin-right: 10px;
+                    background-color: #FFFFFB;
+                }
+                button {
+                    border-radius: 8px;
+                    border-color: #FFFFF7;
+                    padding: 5px;
+                    background-color:#271C10;
+                    color: #FFFFF7;
+                    &:hover {
+                        background-color: $colorAmarillo;
+                    }
+                }
+            }
+        }  
+    }
+    
+    .footer__copy {
+        background-color: $bgColorClaro;
+        color: #73736A;
+        height: 50px;
+        text-align: center;
+        
+        p {
+            padding-top: 15px;
+            font-size: small;
+        }
+    }
+
+}

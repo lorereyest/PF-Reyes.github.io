@@ -1,0 +1,276 @@
+@media (max-width: 992px) {
+    /* HEADER */
+    #header {
+        .nav {
+            .nav__container {
+                .nav-label {
+                    display: block;
+                    cursor:pointer;                   
+                }
+                .nav-menu {
+                    position: fixed;
+                    top: 105px;
+                    bottom: 0px;
+                    background-color: $colorAmarillo;
+                    width: 100%;
+                    left: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 70px;
+                    align-items: center;
+                    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                    transition: clip-path 1s;
+                    .nav-menu__item {
+                        &:hover {
+                            color: #141211d0;
+                        }
+                    }
+                }
+                .nav-input:checked + .nav-menu {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                }
+            }
+        }
+    }
+
+    /* INICIO */
+    #main {
+        .section1 {
+            .section1__container {
+                .container-slogan {
+                    width: 80vw;
+                    .container-slogan__logo {
+                        img {
+                            height: 100px;
+                        }
+                    }
+                    .container-slogan__body {
+                        h1 {
+                            font-size: 18pt;
+                        }
+                    }
+                }
+            }
+        }
+
+        .membresia {
+            .card {
+                width: 85%;
+                .card-body {
+                    margin: 20px 20px 10px 20px;
+                    h3 {
+                        text-align: center;
+                    }
+                }
+                .card-image {
+                    img {
+                        width: 350px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    /* PRODUCTOS */
+    #productos {
+        .productos-pasos {
+            .pasos__item {
+                margin: 10px 60px 10px 60px;
+            }
+        }
+    }
+    
+    /* NOSOTROS */
+    #nosotros {
+        .nosotros__container {
+            .item {
+                .item__description {
+                    gap: 30px;
+                    p {
+                        width: 90%;
+                    }
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* SUCURSALES */
+    #sucursales {
+        .sucursal__container {
+            .btn {
+                font-size: 12px;
+                padding: 15px 5px 15px 5px;
+            }
+            .sucursal {
+                .container-general {
+                    .sucursal-map {
+                        iframe {
+                            height: 350px;
+                            width: 200px;
+                        }
+                    }
+                    .sucursal-img {
+                        img {
+                            width: 350px;
+                            height: auto;
+                        }
+                    }
+                }
+                .capa {
+                    h3 {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    /* FOOTER */
+    #footer { 
+        .footer__container { 
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 80px;
+            .redes {
+                h5 {
+                    padding-bottom: 9px;
+                }
+                .redes__img {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .navegacion {
+                h5 {
+                    padding-bottom: 9px;
+                }
+            }
+            .newsletter {
+                h5 {
+                    padding-bottom: 9px;
+                }
+                p {
+                    width: 280px;
+                    text-align: center; 
+                }
+            }
+        }
+    }
+
+    /* INICIO */
+    #main {
+        .membresia {
+            .card {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                .card-body {
+                    margin: 20px 30px 20px 30px;
+                }
+                .card-image {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* PRODUCTOS */
+    #productos {
+        .productos-pasos {
+            flex-direction: column;
+            .pasos__item {
+                margin: 10px 60px 10px 60px;
+            }
+        }
+    }
+
+    /* NOSOTROS */
+    #nosotros {
+        .nosotros__container {
+            padding: 130px 20px 100px 20px;
+            .item {
+                h2 {
+                    letter-spacing: 4px;
+                }
+                .item__description {
+                    p {
+                        width: 80%;
+                        font-size: 13pt;
+                    }
+                    img {
+                        width: 180px;
+                    }
+                }
+            }
+        }
+        .testimonios__container {
+            .carousel-inner {
+                .carousel-item {
+                    .item-comentario {
+                        p {
+                            font-size: 12pt;
+                        }
+                        .coment {
+                            text-align: center;
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    
+        
+    }
+
+    /* SUCURSALES */
+    #sucursales {
+        .sucursal__container {
+            .sucursal {
+                .container-general {
+                    .sucursal-map {
+                        iframe {
+                            height: 200px;
+                            width: 100px;
+                        }
+                    }
+                    .sucursal-img {
+                        img {
+                            width: 200px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* CONTACTO */
+    #contacto {
+        .formulario {
+            padding: 60px 50px 60px 50px;
+            .form__container {
+                div {
+                    .form-control {
+                        padding: 10px 50px 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+

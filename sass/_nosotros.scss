@@ -1,0 +1,108 @@
+/* NOSOTROS */
+#nosotros {
+    background-color: $bgColorMasClaro;
+    color: #676760;
+
+    .nosotros__container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: 130px 100px 100px 100px;
+        gap: 50px;
+        line-height: 40px;
+
+        h1 {
+            letter-spacing: 4px;
+            font-weight: bold;
+        }
+
+        .item {
+            h2 {
+                width: 100%;
+                text-align: center;
+                letter-spacing: 5px;
+                padding-bottom: 30px;
+                span {
+                    font-weight: bold;
+                }
+            }
+            
+            .item__description {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+
+                p {
+                    text-align: justify;
+                    width: 50%;
+                    font-size: 14pt;
+                }
+                
+                img {
+                    width: 300px;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+
+    .testimonios__container {
+        background-color: $bgColorClaro;
+        padding-bottom: 20px;
+        padding-top: 50px;
+
+        h3 {
+            width: 100%;
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 20pt;
+            padding-bottom: 20px;
+            span {
+                font-weight: bold;
+            }
+        }
+
+        .carousel-inner {
+            .carousel-item {
+                padding: 50px 10px 80px 10px;
+                
+                .item-usuario {
+                    img {
+                        width: 120px;
+                    }
+                }
+                
+                .item-comentario {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+                    
+                    p {
+                        font-size: 14pt;
+                    }
+                    
+                    .name {
+                        font-weight: bold;
+                        padding-top: 20px;
+                    }
+                    
+                    .coment {
+                        text-align: center;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

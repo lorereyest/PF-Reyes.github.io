@@ -1,0 +1,152 @@
+/* INICIO */
+
+#main {
+    .section1 {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+
+        .section1__video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+        }
+
+        .section1__capa {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #00000056;
+        }
+
+        .section1__container {
+            position: relative;
+            z-index: 2;
+            color:#FFFCF3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 45px;
+
+            .animate__animated.animate__zoomIn {
+                --animate-duration: 5s;
+            }
+
+            .container-slogan {
+                width: 70vw;
+                height: 90vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: #FFFFF7;
+        
+                .container-slogan__logo {
+                    img {
+                        height: 110px;
+                        width: auto;
+                    }
+                }
+                .container-slogan__body {
+                    padding-top: 50px;
+                    
+                    h1 {
+                        display: flex;
+                        flex-direction: column;
+                        letter-spacing: 5px;
+                        font-size: 20pt;
+                        text-align: center;
+                        font-weight: bold;
+                        transition: .5s linear;
+                        gap: 15px;
+
+                        &:hover {
+                            color: #FFFFF7;
+                            text-shadow: 0 0 10px #FFFFF7, 0 0 20px #FFFFF7;
+                            transform: scale(1.05);
+                        }
+                    }
+                    
+                    p {
+                        color: #fffff793;
+                        padding-top: 18px;
+                        font-size: 10pt;
+                        letter-spacing: 4px;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    .membresia {
+        width: 100vw;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        color: #73736A;
+        background-color: $bgColorClaro;
+        
+        .card {
+            background-color: $bgColorMasClaro;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            border-radius: 10px;
+            transition: all 400ms ease;
+                &:hover {
+                    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                    transform: translateY(-3%);
+                    }
+            
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                margin: 20px 50px 20px 50px;
+                text-align: justify;
+                gap: 5px;
+                line-height: 28px;
+
+                h3 {
+                    text-transform: uppercase;
+                }
+                
+                a {
+                    background-color: #271C10;
+                    border-color: #271C10;
+                    color: #FFFFF7;
+                    padding: 10px 15px 10px 15px;
+                    
+                    &:hover {
+                        background-color: #D8D8CA;
+                        border-color: #D8D8CA;
+                    }
+                }
+
+            }
+
+            .card-image {
+                img { 
+                    width: 450px;
+                    height: auto;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+            }
+            
+        }
+    }
+}

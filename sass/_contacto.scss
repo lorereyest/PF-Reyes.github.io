@@ -1,0 +1,57 @@
+/* CONTACTO */
+#contacto {
+    width: 100%;
+    padding: 130px 100px 100px 100px;
+    background-color: $bgColorMasClaro;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    .formulario {
+        background-color: #676760da;
+        padding: 80px 150px 80px 150px;
+        color: #fffffb;
+        border-radius: 80px;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+
+        .form__container {
+            text-align: center;
+            
+            .animate__animated.animate__zoomIn {
+                --animate-duration: 3s;
+            }
+
+            h1 {
+                letter-spacing: 4px;
+                margin-bottom: 40px;
+                font-weight: bold;
+            }
+            
+            div {
+                .form-control {
+                    padding: 15px 250px 15px 20px;
+                    border-color: #73736A;
+                    font-size: 14pt;
+                    background-color: $bgColorMasClaro;
+                }
+            }
+            .btn {
+                background-color: #c7c7bc;
+                border-color: #c7c7bc;
+                color: #fffff9;
+                padding: 10px 30px 10px 30px;
+                margin-top: 20px;
+                font-size: 14pt;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: $colorAmarillo;
+                    border-color: $colorAmarillo;
+                }
+            }
+        }
+        
+    }
+}
