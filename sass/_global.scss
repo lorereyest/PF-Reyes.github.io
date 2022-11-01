@@ -53,6 +53,8 @@
                 .nav-menu__item {
                     color: #FFFFF7;
                     text-decoration: none;
+                    font-weight: bold;
+                    
                     &:hover {
                         color: $colorAmarillo;
                     }
@@ -83,14 +85,11 @@
         gap: 50px;
         padding: 80px 50px 80px 50px;
 
-        h5 {
-            text-transform: uppercase;
-            font-size:large;
-        }
-
         .redes {
 
             h5 {
+                text-transform: uppercase;
+                font-size: 13pt;
                 padding-bottom: 3px;
                 border-bottom: 1px solid #FFFFF7;
                 width: 198px;
@@ -101,7 +100,7 @@
                 flex-direction: row;
                 align-content: center;
                 justify-content: left;
-                gap: 35px;
+                gap: 30px;
                 padding-top: 20px;
 
                 a {
@@ -124,7 +123,8 @@
             flex-direction: column;
 
             h5 {
-                padding-bottom: 3px;
+                text-transform: uppercase;
+                font-size: 13pt;
                 border-bottom: 1px solid #FFFFF7;
                 width: 180px;
             }
@@ -133,9 +133,9 @@
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
-                padding-top: 10px;
                 
                 a {
+                    font-size: 12pt;
                     text-decoration: none;
                     color: #FFFFF7 ;
                     margin-left: 5px;
@@ -148,13 +148,14 @@
 
         .newsletter {
             h5 {
-                padding-bottom: 3px;
+                text-transform: uppercase;
+                font-size: 13pt;
                 border-bottom: 1px solid #FFFFF7;
-                width: 300px;
+                width: 260px;
             }
             
             p {
-                padding-top: 10px;
+                font-size: 11pt;
                 width: 300px;
                 text-align: justify;
             }
@@ -165,14 +166,13 @@
                     border-radius: 8px;
                     border-color: #FFFFF7;
                     padding-right: 20px;
-                    margin-right: 10px;
+                    margin-right: 5px;
                     background-color: #FFFFFB;
                 }
                 button {
                     border-radius: 8px;
                     border-color: #FFFFF7;
                     padding: 5px;
-                    margin-bottom: 10px;
                     background-color:#271C10;
                     color: #FFFFF7;
                     &:hover {
